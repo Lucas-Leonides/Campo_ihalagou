@@ -32,14 +32,16 @@ h2 {
 
 .highlight {
     display: inline-block;
-    background-color: #ffeb3b;
     padding: 10px 20px;
     margin: 20px 0;
     border-radius: 8px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-#last-value {
+#last-value,
+#last-value3,
+#last-value4,
+#last-value5 {
     font-size: 1.5em;
     font-weight: bold;
 }
@@ -51,20 +53,29 @@ canvas {
     height: auto;
 }
 
-#refresh-button {
+.fixed-buttons {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f4f4f4;
+    padding: 10px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#refresh-button,
+#toggle-auto-refresh {
     background-color: #007bff;
     color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    z-index: 1000;
+    margin: 0 5px;
 }
 
-#refresh-button:hover {
+#refresh-button:hover,
+#toggle-auto-refresh:hover {
     background-color: #0056b3;
 }
 
@@ -81,11 +92,6 @@ canvas {
 
     h2 {
         font-size: 1em;
-    }
-
-    #refresh-button {
-        top: 5px;
-        right: 5px;
     }
 
     .highlight {
