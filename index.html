@@ -11,21 +11,44 @@
     <div class="container">
         <h1 id="title">Loading...</h1>
         <h2 id="description">Loading...</h2>
-        <button id="refresh-button">Atualizar</button>
+        
         <div class="field-data">
-            <div class="highlight">
-                <p>Leitura do sensor:</p>
+            <div class="highlight" id="highlight">
+                <p>Leitura do sensor (Field 2):</p>
                 <span id="last-value">Loading...</span>
             </div>
             <p>ID da Última Entrada: <span id="last-entry-id">Loading...</span></p>
         </div>
         <canvas id="chart" width="400" height="200"></canvas>
-        <canvas id="chart" width="400" height="200"></canvas>
+        <div class="field-data">
+            <div class="highlight" id="highlight3">
+                <p>Leitura do sensor (Field 3):</p>
+                <span id="last-value3">Loading...</span>
+            </div>
+        </div>
         <canvas id="chart3" width="400" height="200"></canvas>
+        <div class="field-data">
+            <div class="highlight" id="highlight4">
+                <p>Leitura do sensor (Field 4):</p>
+                <span id="last-value4">Loading...</span>
+            </div>
+        </div>
         <canvas id="chart4" width="400" height="200"></canvas>
+        <div class="field-data">
+            <div class="highlight" id="highlight5">
+                <p>Leitura do sensor (Field 5):</p>
+                <span id="last-value5">Loading...</span>
+            </div>
+        </div>
         <canvas id="chart5" width="400" height="200"></canvas>
-        
     </div>
+
+    <!-- Botões fixados na parte inferior -->
+    <div class="fixed-buttons">
+        <button id="refresh-button">Atualizar</button>
+        <button id="toggle-auto-refresh">Ligar</button>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="script.js"></script>
 </body>
